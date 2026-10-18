@@ -1,18 +1,23 @@
-# Build and Release Folders
-bin-debug/
-bin-release/
-[Oo]bj/
-[Bb]in/
+# Wazuh install artifacts and secrets: never publish these
+wazuh-install-files.tar
+wazuh-passwords.txt
+*.tar
+*.pem
+*.key
+*.crt
+*.env
+*password*
+*secret*
 
-# Other files and folders
-.settings/
+# VM files (large, and they may contain data you don't want public)
+*.vdi
+*.vmdk
+*.ova
+*.ovf
+*.vbox
 
-# Executables
-*.swf
-*.air
-*.ipa
-*.apk
-
-# Project files, i.e. `.project`, `.actionScriptProperties` and `.flexProperties`
-# should NOT be excluded as they contain compiler settings and other important
-# information for Eclipse / Flash Builder.
+# OS and editor noise
+.DS_Store
+Thumbs.db
+.vscode/
+*.log
